@@ -1,0 +1,35 @@
+<html>
+<html>
+    <head>
+        <title>Exemplo color input</title>
+        <meta charset="UTF-8">
+
+        <style>
+            body{
+                margin: 0px;
+            }
+            .mostraCor{
+                width:100%;
+                height:30px;
+            }
+        </style>
+    </head>
+     <body>
+        <script>
+              function pegacor(){
+               var cor = document.getElementById('pegacor').value;
+               var div = document.getElementById('divCor');
+               div.style.backgroundColor = cor;
+
+            }
+        </script>  
+          Selecione a cor desejada: <input type="color" id="pegacor" name="nomeCor" onchange="pegacor()" />
+          
+          <br>
+          <h2>Você selecionou a cor:</h2>
+          <br>
+          <div class="mostraCor" id="divCor"></div>
+
+     
+        </body>
+</html>
