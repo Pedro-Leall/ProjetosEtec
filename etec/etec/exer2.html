@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Exemplo Functions</title>
+     </head>
+     <body>
+      <script>
+        function teste() {
+        var n1 = document.getElementById('valor1').value;
+        var n2 = document.getElementById('valor2').value;
+        var n3 = parseInt(n1) + parseInt(n2);
+        document.getElementById('texto').innerHTML = n3;
+        }
+      </script>
+      <input type="text" id="valor1">
+      *
+      <input type="text" id="valor2">
+      <button type="button" onclick="teste()">Clique</button>
+
+      
+      
+
+      <p id="texto"></p>
+     </body>
+</html>

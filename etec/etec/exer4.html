@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         form {
+            position: fixed;
+            height: 600px;
+            width: 220px;
+        }
+        .ph {
+            padding-top: 16px;
+        }
+        .p {
+            padding-top: 14px;
+            width: 200px;
+        }
+        .pII {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        .o {
+            padding-top: 16px;
+            padding-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Informações do Aquário</legend>
+            <div  class="ph">
+                <tr>
+                    <td>
+                        <label for="fname"><b>Ph do Aquário:</b></label><br>
+                    </td>
+                    <td>
+                        <input type="radio" name="Ph do Aquário:" value="1">
+                        <label>Ácido</label>
+                        <input type="radio" name="Ph do Aquário:" value="2">
+                        <label>Alcalino</label>
+                    </td>
+                </tr>
+            </div>
+            <div  class="p">
+                    <fieldset>
+                        <legend>Peixes</legend>
+                        <div class="pII">
+                            <tr>
+                                <td>
+                                    <label for="pin"><b>Qualidade:</b></label>
+                                </td>
+                                <td>
+                                    <input type="text" name="pin" size="3">
+                                </td><br>
+                            </tr><br>
+                            <td>
+                                <label for="pin"><b>Espécie:</b></label>
+                            </td>
+                            <td>
+                                <select name="Espécie" id="Espécie">
+                                        <option value="Espada">Espada</option>
+                                        <option value="Molinésia">Molinésia</option>
+                                        <option value="Plati">Plati</option>
+                                </select>
+                            </td>
+                        </div>
+                    </fieldset>
+                </div>
+                <div  class="o">
+                    <tr>
+                        <td>
+                            <label for="fname"><b>Outros:</b></label><br>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="Outros">
+                            <label>pedras</label><br>
+                            <input type="checkbox" name="Outros">
+                            <label>plantas</label>
+                        </td>
+                    </tr>
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>

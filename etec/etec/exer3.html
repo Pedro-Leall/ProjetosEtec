@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            position: fixed;
+            width: 350px;
+        }
+        .p {
+            float: left;
+        }
+        .lc {
+            float: right;
+        }
+        .c {
+            float: left;
+            padding-top: 26px;
+        }
+        .e {
+            float: left;
+            padding-top: 22px;
+        }
+        .v {
+            float: right;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+                <legend>Compras</legend>
+            <div class="p">
+                    <tr>
+                        <td>
+                            <label for="fname"><h4 align="center">Produtos</h4></label>
+                        </td>
+                        <td>
+                            <select name="Produtos" id="Produtos">
+                                <optgroup  style="font-style: italic" label="Aquários">
+                                    <option value="Aquários 43L">Aquários 43L</option>
+                                    <option value="Aquários 84L">Aquários 84L</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="button" onclick="alert('Aquários')" value="+">
+                        </td>
+                    </tr>
+            </div>
+            <div class="lc">
+                    <tr>
+                        <td>
+                            <label for="fname"><h4 align="center">Lista de Compras</h4></label>
+                        </td>
+                        <td>
+                            <textarea name="Lista de Compras" rows="11" cols="14"></textarea>
+                        </td>
+                    </tr>
+            </div>
+            <div class="c">
+                <tr>
+                    <td>
+                        <label for="fname"><h4 align="center">Complementos</h4></label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Complementos" value="1">
+                        <label>Movel + Luminária</label> <br>
+                        <input type="radio" name="Complementos" value="2">
+                        <label>Luminária</label> <br>
+                        <input type="radio" name="Complementos" value="3">
+                        <label>Só vidro</label> <br>
+                    </td>
+                </tr>
+            </div>
+            <div class="e">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Entrega">
+                    </td>
+                    <td>
+                        <label>Entrega como Presente</label>
+                    </td>
+                </tr>
+            </div>
+            <div class="v">
+                <tr>
+                    <td>
+                        <label for="pin">Valor Total:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="pin" size="3">
+                    </td>
+                </tr>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
